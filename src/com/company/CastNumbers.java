@@ -29,9 +29,9 @@ public class CastNumbers {
         return array;
     }
 
-    public int[] parseToInt(String[] messung) {
+    public int[] parseToInt(String[] messung, int grosse) {
 
-        int size = 2000;
+        int size = grosse;
         int [] intArray = new int [size];
         for(int i=0; i<size; i++) {
             intArray[i] = Integer.parseInt(messung[i]);
@@ -85,8 +85,8 @@ public class CastNumbers {
                 decCounter += 1;
             }
         }
-        System.out.println("Die Messungen waren: " + incrCounter + " mal höher.\nDie Messungen waren: " + decCounter + " mal niedriger.");
-        System.out.println("Und Messungen waren: " + noChangeCounter + " mal gleich");
+        System.out.println("  Die Messungen waren: " + incrCounter + " mal höher.\n Die Messungen waren: " + decCounter + " mal niedriger.");
+        System.out.println("  Und Messungen waren: " + noChangeCounter + " mal gleich");
 
     }
 }
